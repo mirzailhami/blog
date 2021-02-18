@@ -1,0 +1,40 @@
+<niz-seo
+  title="Konfirmasi newsletter - mirzailhami"
+  description="Konfirmasi newsletter Anda pada mirzailhami.com"
+  robots="nofollow, noindex"
+></niz-seo>
+
+<div
+  class="max-w-container flex flex-col items-center justify-center min-h-80 my-4 space-y-5"
+>
+  <ng-container *ngIf="!confirmed && !error">
+    <niz-inline-svg
+      class="h-6 w-6 spin"
+      svgSource="assets/img/spinner.svg"
+    ></niz-inline-svg>
+  </ng-container>
+  <ng-container *ngIf="!confirmed && error">
+    <img
+      class="w-64"
+      src="assets/img/cancel.svg"
+      alt="Error while confirming subscription"
+    />
+    <h2 class="mt-2 text-2xl font-semibold md:text-3xl">Oh no!</h2>
+    <p class="mt-1 text-lg md:text-xl">
+      Duh, error! Silakan coba lagi 🙈
+    </p>
+  </ng-container>
+  <ng-container *ngIf="confirmed">
+    <img
+      class="w-64"
+      src="assets/img/subscribed.svg"
+      alt="Subscription confirmed"
+    />
+    <h2 class="mt-2 text-2xl font-semibold md:text-3xl">
+      Terima kasih sudah berlangganan!
+    </h2>
+    <p class="mt-1 text-lg md:text-xl">
+      Anda akan mendapatkan update terbaru dari mirzailhami.com, follow juga saya di <a href="https://twitter.com/mirzailhami" class="text-primary hover:text-primary-dark">twitter</a> & <a href="https://instagram.com/mirzailhami" class="text-primary hover:text-primary-dark">instagram</a>
+    </p>
+  </ng-container>
+</div>

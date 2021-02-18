@@ -1,0 +1,11 @@
+<niz-seo
+  *ngIf="page$ | async as page"
+  [title]="page.title + ' - mirzailhami'"
+  [route]="page.route"
+  robots="nofollow, noindex"
+></niz-seo>
+
+<div class="prose max-w-container mt-10 md:prose-lg">
+  <h1 *ngIf="page$ | async as page">{{ page.title }}</h1>
+  <scully-content></scully-content>
+</div>

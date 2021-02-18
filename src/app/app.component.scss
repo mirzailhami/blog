@@ -1,0 +1,29 @@
+.theme {
+  transition: transform 180ms ease;
+}
+
+.router-link {
+  @apply relative text-lg font-semibold h-6 select-none rounded-md focus:outline-none;
+}
+
+.router-link-active {
+  position: relative;
+}
+
+.router-link::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  transition: width 160ms;
+}
+
+.router-link-active::after {
+  content: ' ';
+  position: absolute;
+  width: calc(100% - 4px);
+  height: 4px;
+  background-color: theme('colors.primary.DEFAULT');
+  left: 2px;
+  bottom: -8px;
+  border-radius: 999px;
+}

@@ -1,0 +1,19 @@
+{
+  "title": "mirzailhami.com",
+  "description": "Semua tentang Ionic Framework, CapacitorJS, Angular dan teknologi terkait mobile native web",
+  "id": "https://mirzailhami.com",
+  "link": "https://mirzailhami.com",
+  "language": "id",
+  "image": "https://mirzailhami.com/assets/img/featured.png",
+  "favicon": "https://mirzailhami.com/favicon.png",
+  "copyright": "2021 mirzailhami.com",
+  "generator": "Semua tentang Ionic Framework, CapacitorJS, Angular dan teknologi terkait mobile native web",
+  "feedLinks": {
+    "json": "https://mirzailhami.com/feed.json",
+    "atom": "https://mirzailhami.com/feed.atom"
+  },
+  "outDir": "./dist/static",
+  "categories": ["Web Development", "Ionic Framework", "Blog", "Angular", "node", "JavaScript"],
+  "blogPostRouteSlug": "/blog",
+  "newestPostsFirst": true
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffcc01;stroke: #ffffff;paint-order:stroke fill markers;stroke-width: 80 } 
+		.shp1 { fill: #f62b54;stroke: #ffffff;paint-order:stroke fill markers;stroke-width: 80 } 
+		.shp2 { fill: #00ca72;stroke: #ffffff;paint-order:stroke fill markers;stroke-width: 80 } 
+	</style>
+	<path id="Shape 1" class="shp0" d="M512.5 44L512.5 44C559.78 44 598 82.22 598 129.5L598 893.5C598 940.78 559.78 979 512.5 979L512.5 979C465.22 979 427 940.78 427 893.5L427 129.5C427 82.22 465.22 44 512.5 44Z" />
+	<path id="Shape 1 copy" class="shp1" d="M206 202L206 202C253 202 291 240 291 287L291 738C291 785 253 823 206 823L206 823C158.99 823 121 785 121 738L121 287C121 240 158.99 202 206 202Z" />
+	<path id="Shape 1 copy 2" class="shp2" d="M819 202L819 202C866 202 904 240 904 287L904 738C904 785 866 823 819 823L819 823C772 823 734 785 734 738L734 287C734 240 772 202 819 202Z" />
+</svg>

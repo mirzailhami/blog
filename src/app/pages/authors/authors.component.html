@@ -1,0 +1,18 @@
+<niz-seo
+  title="Penulis - notiz"
+  description="Semua penulis di mirzailhami.com"
+></niz-seo>
+
+<div class="max-w-container space-y-5 mt-10">
+  <h1 class="text-4xl font-bold md:text-5xl">Penlis</h1>
+  <p class="text-lg text-color-light sm:text-xl md:text-2xl">
+    Lihat detil tentang mirzailhami.com
+  </p>
+
+  <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+    <app-author
+      *ngFor="let link of authors$ | async"
+      [author]="link"
+    ></app-author>
+  </div>
+</div>

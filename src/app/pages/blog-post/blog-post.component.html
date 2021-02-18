@@ -1,0 +1,86 @@
+<niz-seo
+  *ngIf="post$ | async as post"
+  [title]="post.title"
+  [description]="post.description"
+  [route]="post.route"
+  [tags]="post.tags"
+  [keywords]="post.keywords"
+  [twitterImage]="post.route"
+  [ogImage]="post.route"
+  [articlePublishedAt]="post.publishedAt"
+  [articleUpdatedAt]="post.updatedAt"
+  [articleAuthors]="authors$ | async | mapPostAuthors"
+></niz-seo>
+
+<article class="mt-10 max-w-screen-xl mx-auto" *ngIf="post$ | async as route">
+  <div class="max-w-container space-y-6">
+    <header class="space-y-6">
+      <app-breadcrumb></app-breadcrumb>
+      <div class="prose max-w-none md:prose-lg space-y-5">
+        <dl>
+          <div>
+            <dt class="sr-only">Diterbitkan pada</dt>
+            <dd class="text-base leading-6 font-medium text-color-light">
+              <time [dateTime]="route.publishedAt">
+                {{ route.publishedAt | date: 'dd MMMM yyyy' }}
+              </time>
+            </dd>
+          </div>
+        </dl>
+
+        <h1>
+          {{ route.title }}
+        </h1>
+
+        <p class="text-lg md:text-2xl">
+          {{ route.description }}
+        </p>
+      </div>
+    </header>
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 md:gap-x-4 lg:grid-cols-4 lg:gap-x-6"
+    >
+      <div
+        class="prose prose-toc max-w-none md:prose-lg md:col-span-2 lg:col-span-3"
+      >
+        <scully-content></scully-content>
+      </div>
+      <div class="order-first md:order-none">
+        <div class="sticky top-32 space-y-8">
+          <niz-toc></niz-toc>
+          <div>
+            <h5 class="uppercase tracking-wide font-semibold mb-2 text-sm lg:text-md">Tags</h5>
+            <niz-chip
+              class="mb-1 mr-1 hover:border-primary"
+              *ngFor="let tag of route.tags | slice: 0:3"
+              size="xl"
+            >
+              <a class="hover:text-primary" [routerLink]="'/tags/' + (tag | dash | lowercase)">
+                {{ tag }}
+              </a>
+            </niz-chip>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space-y-4">
+      <h2 class="ml-2 text-2xl">Penulis</h2>
+      <app-author [author]="(authors$ | async)[0]"></app-author>
+    </div>
+  </div>
+</article>
+
+<div class="mx-auto flex">
+  <app-card-stack
+    title="Postingan Terkait"
+    subtitle="Temukan semua postingan terkait."
+  >
+    <div class="card" *ngFor="let blogPost of related$ | async | slice: 0:8">
+      <app-article class="stacked" [route]="blogPost"></app-article>
+    </div>
+    <div class="card" *ngIf="(related$ | async | slice: 0:8)?.length < 7">
+      <app-coming-soon></app-coming-soon>
+    </div>
+  </app-card-stack>
+</div>
+<app-comments class="my-5" [route]="post$ | async"></app-comments>

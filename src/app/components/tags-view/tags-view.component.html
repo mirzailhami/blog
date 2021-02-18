@@ -1,0 +1,24 @@
+<niz-chip
+  class="mb-1 mr-1 hover:border-primary "
+  *ngFor="let tag of tags | async | slice: 0:limit"
+>
+  <a [routerLink]="'/tags/' + tag.slug" class="hover:text-primary">
+    {{ tag.title }}
+  </a>
+</niz-chip>
+
+<niz-chip
+  class="mb-1 mr-1 hover:border-primary uppercase"
+>
+  <a [routerLink]="'/tags'" class="hover:text-primary">
+    Semua
+  </a>
+</niz-chip>
+
+<!-- <a
+  *ngIf="(tags | async)?.length > limit"
+  [routerLink]="'/tags/'"
+  class="text-sm font-bold uppercase text-color hover:text-primary mr-2"
+>
+  semua
+</a> -->

@@ -1,0 +1,39 @@
+<form
+  class="max-w-container flex flex-col space-y-5"
+  [formGroup]="newsletterSignup"
+  (ngSubmit)="signupNewsletter()"
+>
+  <div class="prose max-w-none">
+    <h2>Langganan Artikel</h2>
+    <p>
+      Tinggalkan email untuk berlangganan artikel terkini seputar <a [routerLink]="'tags/angular'">Angular</a>,
+      <a [routerLink]="'tags/ionic'">Ionic</a>, <a [routerLink]="'tags/capacitor'">Capacitor</a> dan banyak lagi!
+    </p>
+  </div>
+
+  <div
+    class="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 items-center"
+  >
+    <niz-input
+      class="w-full md:w-9/12"
+      label="Email Address"
+      type="email"
+      formControlName="email"
+      [invalid]="invalid"
+      (nizFocus)="nizFocus()"
+    ></niz-input>
+    <niz-primary-button class="w-full md:w-3/12" type="submit">
+      <niz-inline-svg
+        *ngIf="!pending"
+        class="h-6 w-6 mr-2"
+        svgSource="assets/img/paper-plane.svg"
+      ></niz-inline-svg>
+      <niz-inline-svg
+        *ngIf="pending"
+        class="h-6 w-6 mr-2 spin"
+        svgSource="assets/img/spinner.svg"
+      ></niz-inline-svg>
+      Subscribe
+    </niz-primary-button>
+  </div>
+</form>

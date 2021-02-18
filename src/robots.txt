@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://mirzailhami.com/sitemap.xml
+Sitemap: https://mirzailhami.com/sitemap-blog.xml
+Sitemap: https://mirzailhami.com/sitemap-tags.xml

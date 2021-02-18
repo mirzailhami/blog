@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mirza Ilhami | Semua tentang Ionic Framework dan Teknologi JavaScript</title>
+    <meta
+      name="description"
+      content="Semua tentang Ionic Framework, CapacitorJS, Angular dan teknologi terkait mobile native web"
+    />
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-icon-192x192.png" />
+    <meta name="theme-color" content="#4353FF" />
+
+    <script>
+      window.sa_event =
+        window.sa_event ||
+        function () {
+          a = [].slice.call(arguments);
+          sa_event.q ? sa_event.q.push(a) : (sa_event.q = [a]);
+        };
+    </script>
+  </head>
+
+  <body class="antialiased">
+    <script>
+      // prevent theme flicker
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      const storedTheme =
+        window.localStorage && window.localStorage.getItem('theme');
+
+      const theme =
+        storedTheme === 'dark' || storedTheme === 'light'
+          ? storedTheme
+          : prefersDark
+          ? 'dark'
+          : 'light';
+      document.body.classList.toggle('dark', theme === 'dark');
+    </script>
+    <app-root></app-root>
+    <noscript>
+      Please enable JavaScript to continue using this application.
+    </noscript>
+
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript
+      ><img
+        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+    /></noscript>
+  </body>
+</html>
