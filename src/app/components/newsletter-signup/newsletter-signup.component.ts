@@ -52,7 +52,7 @@ export class NewsletterSignupComponent implements OnInit {
               type: ToastType.SUCCESS,
               duration: 4000,
               text:
-                'Berhasil subscribe dengan mirzailhami.com. Cek inbox email Anda 📨',
+                'Subscribe berhasil. Terima kasih 🤗',
             });
           })
         )
