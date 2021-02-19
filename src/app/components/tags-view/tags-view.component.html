@@ -1,5 +1,5 @@
 <niz-chip
-  class="mb-1 mr-1 hover:border-primary "
+  class="mb-1 mr-1 hover:border-primary lowercase"
   *ngFor="let tag of tags | async | slice: 0:limit"
 >
   <a [routerLink]="'/tags/' + tag.slug" class="hover:text-primary">
@@ -8,7 +8,7 @@
 </niz-chip>
 
 <niz-chip
-  class="mb-1 mr-1 hover:border-primary uppercase"
+  class="mb-1 mr-1 hover:border-primary lowercase"
 >
   <a [routerLink]="'/tags'" class="hover:text-primary">
     Semua

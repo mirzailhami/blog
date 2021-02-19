@@ -1,16 +1,16 @@
 <footer class="max-w-container">
   <div class="md:grid md:grid-cols-2 md:gap-x-8">
     <div>
-      <p class="text-sm font-semibold text-color-shade">Tentang</p>
+      <p class="text-sm font-semibold text-color-shade uppercase">Tentang</p>
       <div class="prose my-4">
         <p>
-          Saya Mirza Ilhami, senang menulis seputar mobile native web khususnya semua terkait <a [routerLink]="'tags/ionic'">Ionic Framework</a>, <a [routerLink]="'tags/ionic'">Capacitor</a>, <a [routerLink]="'tags/pwa'">PWA</a> & <a [routerLink]="'tags/angular'">Angular</a>. Saat ini sibuk membuat video tutorial singkat tentang teknologi cross-platform native web app untuk Android dan iOS.
+          Saya Mirza Ilhami, senang menulis seputar mobile native web khususnya semua terkait <a [routerLink]="'tags/ionic'">Ionic Framework</a>, <a [routerLink]="'tags/ionic'">Capacitor</a>, <a [routerLink]="'tags/pwa'">PWA</a> & <a [routerLink]="'tags/angular'">Angular</a>. Saat ini sibuk membuat video tutorial singkat tentang teknologi cross-platform native web app untuk Android dan iOS. Mohon saran dan masukannya.
         </p>
       </div>
     </div>
     <div class="grid grid-cols-2 px-4">
       <div *ngFor="let footerSection of footerSections">
-        <p class="text-sm font-semibold text-color-shade">
+        <p class="text-sm font-semibold text-color-shade uppercase">
           {{ footerSection.title }}
         </p>
         <div class="mt-4 space-y-2">

@@ -1,4 +1,4 @@
-<p align="center">
+<p>
   <a href="https://mirzailhami.com" target="blank"><img src="https://raw.githubusercontent.com/mirzailhami/blog/master/src/assets/img/featured.png" width="460px" alt="mirzailhami.com" /></a>
   
   [![Firebase deploy](https://github.com/mirzailhami/blog/actions/workflows/firebase-deploy.yml/badge.svg)](https://github.com/mirzailhami/blog/actions/workflows/firebase-deploy.yml)
@@ -10,7 +10,7 @@ Hi, saya Mirza Ilhami, full stack software developer yang fokus dengan JavaScrip
 
 Diwaktu senggang saya juga mengajar mahasiswa di kelas, tepatnya ngajar kelas online dari rumah.
 
-## Memulai
+## Memulai projek
 
 ```bash
 npm install

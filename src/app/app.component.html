@@ -9,7 +9,7 @@
           class="h-8 w-8"
           svgSource="assets/img/logo.svg"
         ></niz-inline-svg>
-        <span class="text-2xl font-black text-primary">mirzailhami </span>
+        <span class="text-2xl font-bold text-primary">mirzailhami </span>
       </a>
       <div class="hidden md:flex flex-row space-x-4">
         <a
@@ -28,7 +28,7 @@
           [attr.aria-label]="'Scroll to Newsletter'"
           (click)="scrollToNewsletter()"
         >
-          Newsletter
+          Subscribe
         </button>
       </div>
     </div>
@@ -103,14 +103,14 @@
       }"
       routerLinkActive="router-link-active"
     >
-      Blog
+      Artikel
     </a>
     <button
       class="router-link"
-      [attr.aria-label]="'Scroll to Newsletter'"
+      [attr.aria-label]="'Scroll untuk Berlangganan'"
       (click)="scrollToNewsletter()"
     >
-      Newsletter
+      Langganan
     </button>
     <button
       (click)="openSearch(search)"
@@ -121,7 +121,7 @@
         class="h-4 w-4 theme"
         svgSource="assets/img/search.svg"
       ></niz-inline-svg>
-      <span class="px-2 outline-none font-semibold"> Tap to focus</span>
+      <span class="px-2 outline-none font-semibold"> Tap untuk pencarian</span>
     </button>
     <button
       (click)="toggleTheme(); $event.stopPropagation()"

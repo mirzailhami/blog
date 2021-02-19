@@ -52,7 +52,7 @@ export class NewsletterSignupComponent implements OnInit {
               type: ToastType.SUCCESS,
               duration: 4000,
               text:
-                'Successfully subscribed to notiz.dev. Check your email. 📮',
+                'Berhasil subscribe dengan mirzailhami.com. Cek inbox email Anda 📨',
             });
           })
         )
@@ -64,7 +64,7 @@ export class NewsletterSignupComponent implements OnInit {
     this.toast.show({
       type: ToastType.ERROR,
       duration: 4000,
-      text: 'Please enter your mail address. 📧',
+      text: 'Mohon lengkapi email Anda 😊',
     });
   }
 

@@ -35,13 +35,13 @@ export class AppComponent implements OnInit {
       title: 'Lainnya',
       links: [
         {
-          title: 'Artikel',
+          title: 'Tutorial',
           url: '/blog/',
           svg: 'assets/img/blog-white.svg',
         },
         {
           title: 'Penulis',
-          url: '/authors/me',
+          url: '/authors/mirza-ilhami',
           svg: 'assets/img/author.svg',
         },
         {
@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
       ],
     },
     {
-      title: 'Konek',
+      title: 'Kontak',
       links: [
         {
           title: 'Twitter',

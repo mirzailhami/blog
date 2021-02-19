@@ -1,0 +1,21 @@
+:host {
+  height: 56px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  @apply bg-canvas;
+  z-index: 5;
+  transition: transform 260ms ease;
+  box-shadow: rgba(2, 8, 20, 0.06) 0px 1px 3px, rgba(2, 8, 20, 0.04) 0px 1px 2px;
+
+  header,
+  ::ng-deep header niz-toolbar {
+    height: 56px;
+  }
+}
+
+:host.out {
+  transform: translateY(-100%);
+}
