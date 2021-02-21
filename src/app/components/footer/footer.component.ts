@@ -14,7 +14,7 @@ export interface FooterLink {
 }
 
 @Component({
-  selector: 'niz-footer',
+  selector: 'mzi-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })

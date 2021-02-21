@@ -1,4 +1,4 @@
 ---
 title: CapacitorJS
-slug: capacitor
+slug: capacitorjs
 ---

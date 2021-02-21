@@ -10,7 +10,7 @@ import {
 } from 'rxjs/operators';
 
 @Component({
-  selector: 'niz-navbar',
+  selector: 'mzi-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })

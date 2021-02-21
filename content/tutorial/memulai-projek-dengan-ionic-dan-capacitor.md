@@ -6,8 +6,8 @@ publishedAt: 2021-02-20T05:10:00.000Z
 updatedAt: 2021-02-20T05:10:00.000Z
 tags:
   - Angular
-  - Ionic
-  - Capacitor
+  - Ionic Framework
+  - CapacitorJS
 keywords:
   - iOS
   - Android
@@ -25,7 +25,7 @@ Pertama sekali, pastikan [Node.js](https://nodejs.org/en/download) telah terinst
 npm install -g @ionic/cli
 ```
 
-Jika sebelumnya Anda telah menginstal Ionic, silakan terlebih dahulu uninstall dan install kembali seperti berikut:
+Jika sebelumnya Anda telah menginstal [Ionic](https://mirzailhami.com/tags/ionic-framework), silakan terlebih dahulu uninstall dan install kembali seperti berikut:
 ```
 npm uninstall -g ionic
 npm install -g @ionic/cli
@@ -79,7 +79,7 @@ Untuk memulai aplikasi Ionic melalui wizard UI silakan [klik disini](https://ion
 Langkah berikutnya adalah Anda dapat mengkoneksikan projek Ionic tersebut ke `Github/Gitlab/Bitbucket` dan menggunakan [Dashboard Ionic](https://dashboard.ionicframework.com) untuk build, deploy dan preview.
 
 ## Menggunakan Capacitor
-Capacitor tidak hanya dapat digunakan dengan Ionic, namun juga dengan web app lainnya. Untuk menginstal Capacitor dengan Ionic sebagai berikut:
+Capacitor tidak hanya dapat digunakan dengan Ionic, namun juga dengan web app lainnya. Untuk menginstal [Capacitor](https://mirzailhami.com/tags/capacitorjs) dengan Ionic sebagai berikut:
 ### Projek Baru
 Memulai projek Ionic beserta Capacitor adalah sebagai berikut:
 ```

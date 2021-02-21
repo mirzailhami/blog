@@ -127,7 +127,7 @@ body {
 }
 
 body.dark {
-  niz-toast.error {
+  mzi-toast.error {
     @apply bg-red-800;
 
     .toast-text,
@@ -135,7 +135,7 @@ body.dark {
       @apply text-color-light;
     }
   }
-  niz-toast.success {
+  mzi-toast.success {
     @apply bg-green-800;
 
     .toast-text,
@@ -146,10 +146,10 @@ body.dark {
 }
 
 body:not(.dark) {
-  niz-toast.error {
-    @apply bg-red-500;
+  mzi-toast.error {
+    @apply bg-red-900;
   }
-  niz-toast.success {
+  mzi-toast.success {
     @apply bg-green-800;
   }
 }

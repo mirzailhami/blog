@@ -1,5 +1,5 @@
-<niz-navbar>
-  <niz-toolbar class="xl:px-0">
+<mzi-navbar>
+  <mzi-toolbar class="xl:px-0">
     <div start class="flex flex-row space-x-8 items-center">
       <a
         class="flex items-center select-none space-x-2"
@@ -75,25 +75,25 @@
         ></niz-inline-svg>
       </button>
     </div>
-  </niz-toolbar>
-</niz-navbar>
+  </mzi-toolbar>
+</mzi-navbar>
 
 <main class="mt-10">
   <router-outlet></router-outlet>
 </main>
 
 <app-newsletter-signup #newsletter class="mt-10"></app-newsletter-signup>
-<niz-footer
+<mzi-footer
   class="my-10"
   [footerSections]="footerSections"
   [copyrightUrl]="copyrightUrl"
   [createdWithSvgSources]="createdWithSvgSources"
-></niz-footer>
+></mzi-footer>
 
-<niz-search #search></niz-search>
-<niz-toast></niz-toast>
+<mzi-search #search></mzi-search>
+<mzi-toast></mzi-toast>
 
-<niz-menu #menu>
+<mzi-menu #menu>
   <div class="h-full flex flex-col space-y-4 items-end justify-center pr-8">
     <a
       class="router-link"
@@ -115,7 +115,7 @@
     <button
       (click)="openSearch(search)"
       [attr.aria-label]="'Open search'"
-      class="flex bg-canvas-light border-solid border-2 border-canvas-light hover:border-primary focus:outline-none rounded-xl p-1 flex-row space-x-1 items-center"
+      class="flex bg-canvas-light border-solid border-2 border-canvas-shade hover:border-primary focus:outline-none rounded-xl p-1 flex-row space-x-1 items-center"
     >
       <niz-inline-svg
         class="h-4 w-4 theme"
@@ -135,4 +135,4 @@
       <span class="px-2 outline-none font-semibold"> Toggle theme</span>
     </button>
   </div>
-</niz-menu>
+</mzi-menu>

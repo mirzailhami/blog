@@ -1,4 +1,4 @@
 ---
 title: Ionic Framework
-slug: ionic
+slug: ionic-framework
 ---

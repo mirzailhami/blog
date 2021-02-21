@@ -25,7 +25,7 @@ import { Subject, merge } from 'rxjs';
 import { SearchPipe } from '@pipes/search.pipe';
 
 @Component({
-  selector: 'niz-search',
+  selector: 'mzi-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss'],
 })

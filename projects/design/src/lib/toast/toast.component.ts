@@ -4,7 +4,7 @@ import { filter, tap, switchMap, takeUntil, repeat } from 'rxjs/operators';
 import { Subject, timer } from 'rxjs';
 
 @Component({
-  selector: 'niz-toast',
+  selector: 'mzi-toast',
   templateUrl: './toast.component.html',
   styleUrls: ['./toast.component.scss'],
 })

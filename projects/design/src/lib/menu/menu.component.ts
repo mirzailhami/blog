@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'niz-menu',
+  selector: 'mzi-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })
