@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, HostBinding, Host } from '@angular/core';
 
 @Component({
-  selector: 'niz-chip',
+  selector: 'mzi-chip',
   templateUrl: './chip.component.html',
   styleUrls: ['./chip.component.scss'],
 })

@@ -1,19 +1,19 @@
-<niz-chip
+<mzi-chip
   class="mb-1 mr-1 hover:border-primary lowercase"
   *ngFor="let tag of tags | async | slice: 0:limit"
 >
   <a [routerLink]="'/tags/' + tag.slug" class="hover:text-primary">
     {{ tag.title }}
   </a>
-</niz-chip>
+</mzi-chip>
 
-<niz-chip
+<mzi-chip
   class="mb-1 mr-1 hover:border-primary lowercase"
 >
   <a [routerLink]="'/tags'" class="hover:text-primary">
     Semua
   </a>
-</niz-chip>
+</mzi-chip>
 
 <!-- <a
   *ngIf="(tags | async)?.length > limit"

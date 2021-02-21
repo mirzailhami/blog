@@ -31,7 +31,7 @@ export class NizInput implements ControlValueAccessor {
   @Input() invalid = false;
 
   @Output() nizBlur = new EventEmitter<FocusEvent>();
-  @Output() nizFocus = new EventEmitter<FocusEvent>();
+  @Output() focused = new EventEmitter<FocusEvent>();
 
   @HostBinding('class') get classes(): string {
     return 'block w-full';
@@ -71,7 +71,7 @@ export class NizInput implements ControlValueAccessor {
   }
 
   focus(event: FocusEvent) {
-    this.nizFocus.emit(event);
+    this.focused.emit(event);
   }
 
   registerOnChange(fn: any) {

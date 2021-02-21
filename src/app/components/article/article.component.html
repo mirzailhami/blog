@@ -1,9 +1,9 @@
 <a class="article-card" [routerLink]="[route.route]">
   <div class="flex flex-row items-center text-sm space-x-2">
-    <niz-inline-svg
+    <mzi-inline-svg
       class="h-4 w-4"
       svgSource="assets/img/blog.svg"
-    ></niz-inline-svg>
+    ></mzi-inline-svg>
     <span>{{ route.updatedAt | date: 'MMMM dd, yyyy' }}</span>
   </div>
 
@@ -11,18 +11,18 @@
     {{ route.title }}
   </h2>
 
-  <div class="text-base text-color-light description line-clamp-2 leading-6 mt-1 mb-5">
+  <div class="text-base text-color-light description line-clamp-2 leading-6 mt-1 mb-2">
     {{ route.description }}
   </div>
-  <niz-chip
+  <mzi-chip
     class="tags hover:border-primary mr-1"
     *ngFor="let tag of route.tags | slice: 0:3"
     size="xl"
   >
     <a class="hover:text-primary" [routerLink]="'/tags/' + tag | dash | lowercase">{{ tag }}</a>
-  </niz-chip>
-  <niz-inline-svg
+  </mzi-chip>
+  <mzi-inline-svg
     class="icon h-4 w-4 text-primary absolute bottom-5 right-4"
     svgSource="assets/img/arrow-right.svg"
-  ></niz-inline-svg>
+  ></mzi-inline-svg>
 </a>

@@ -20,7 +20,7 @@ import { ScullyRoutesService } from '@scullyio/ng-lib';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'niz-toc',
+  selector: 'mzi-toc',
   templateUrl: './table-of-contents.component.html',
   styleUrls: ['./table-of-contents.component.scss'],
 })

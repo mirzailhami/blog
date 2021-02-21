@@ -37,9 +37,9 @@ body {
   @apply bg-canvas;
 }
 
-.max-w-container{
-  max-width: 1280px;
-}
+// .max-w-container{
+//   max-width: 1280px;
+// }
 
 // .gradient:hover {
 //   background: var(--gradient);
@@ -60,10 +60,10 @@ body {
   border-radius: 99px;
 }
 
-.theme.dark.rotate niz-inline-svg {
+.theme.dark.rotate mzi-inline-svg {
   transform: rotateZ(180deg);
 }
-.theme niz-inline-svg {
+.theme mzi-inline-svg {
   transition: transform 150ms ease;
 }
 

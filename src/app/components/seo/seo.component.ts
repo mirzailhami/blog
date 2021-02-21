@@ -10,7 +10,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'niz-seo',
+  selector: 'mzi-seo',
   template: ``,
 })
 export class SeoComponent implements OnInit, OnChanges {

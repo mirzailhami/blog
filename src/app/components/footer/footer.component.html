@@ -8,7 +8,7 @@
         </p>
       </div>
     </div>
-    <div class="grid grid-cols-2 px-4">
+    <div class="grid grid-cols-2">
       <div *ngFor="let footerSection of footerSections">
         <p class="text-sm font-semibold text-color-shade uppercase">
           {{ footerSection.title }}
@@ -34,10 +34,10 @@
             </a>
 
             <ng-template #myTemplate>
-              <!-- <niz-inline-svg
+              <!-- <mzi-inline-svg
                 class="h-4 w-4 mr-1"
                 [svgSource]="link.svg"
-              ></niz-inline-svg> -->
+              ></mzi-inline-svg> -->
               {{ link.title }}
             </ng-template>
           </ng-container>
@@ -49,11 +49,11 @@
   <div class="mt-5">
     <div class="flex justify-center">
       <div class="ml-1 flex items-center">
-        <niz-inline-svg
+        <mzi-inline-svg
           class="h-5 w-5"
           *ngFor="let svg of createdWithSvgSources"
           [svgSource]="svg"
-        ></niz-inline-svg>
+        ></mzi-inline-svg>
       </div>
     </div>
 

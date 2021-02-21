@@ -1,4 +1,4 @@
-<niz-seo
+<mzi-seo
   *ngIf="author$ | async as author"
   [title]="author.title + ' - notiz'"
   [description]="'Overview of posts on notiz.dev by ' + author.title"
@@ -10,7 +10,7 @@
     author.title.slice(author.title.indexOf(' ') + 1, author.title.length)
   "
   [authorUserName]="author.twitter"
-></niz-seo>
+></mzi-seo>
 
 <div class="max-w-container space-y-5 mt-10">
   <app-breadcrumb></app-breadcrumb>
@@ -44,33 +44,33 @@
     </div>
 
     <div class="space-x-2" *ngIf="author$ | async as author">
-      <niz-chip size="xl">
+      <mzi-chip size="xl">
         <a
           class="flex items-center space-x-2"
           href="https://twitter.com/{{ author.twitter }}"
           target="_blank"
           rel="noreferrer"
         >
-          <niz-inline-svg
+          <mzi-inline-svg
             class="h-4 w-4"
             svgSource="assets/img/twitter-white.svg"
-          ></niz-inline-svg>
+          ></mzi-inline-svg>
           <span>@{{ author.twitter }}</span>
         </a>
-      </niz-chip>
-      <niz-chip size="xl">
+      </mzi-chip>
+      <mzi-chip size="xl">
         <a
           class="flex items-center space-x-2"
           href="https://github.com/{{ author.github }}"
           target="_blank"
           rel="noreferrer"
-          ><niz-inline-svg
+          ><mzi-inline-svg
             class="h-4 w-4"
             svgSource="assets/stack/github.svg"
-          ></niz-inline-svg>
+          ></mzi-inline-svg>
           <span>@{{ author.github }}</span>
         </a>
-      </niz-chip>
+      </mzi-chip>
     </div>
   </div>
 </div>

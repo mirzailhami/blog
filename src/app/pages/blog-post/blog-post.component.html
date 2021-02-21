@@ -1,4 +1,4 @@
-<niz-seo
+<mzi-seo
   *ngIf="post$ | async as post"
   [title]="post.title"
   [description]="post.description"
@@ -10,7 +10,7 @@
   [articlePublishedAt]="post.publishedAt"
   [articleUpdatedAt]="post.updatedAt"
   [articleAuthors]="authors$ | async | mapPostAuthors"
-></niz-seo>
+></mzi-seo>
 
 <article class="mt-10 max-w-screen-xl mx-auto" *ngIf="post$ | async as route">
   <div class="max-w-container space-y-6">
@@ -45,12 +45,12 @@
       >
         <scully-content></scully-content>
       </div>
-      <div class="order-first md:order-none">
+      <div class="order-first md:order-none mb-5">
         <div class="sticky top-32 space-y-8">
-          <niz-toc></niz-toc>
+          <mzi-toc></mzi-toc>
           <div>
             <h5 class="uppercase tracking-wide font-semibold mb-2 text-sm lg:text-md">Tags</h5>
-            <niz-chip
+            <mzi-chip
               class="mb-1 mr-1 hover:border-primary"
               *ngFor="let tag of route.tags | slice: 0:3"
               size="xl"
@@ -58,7 +58,7 @@
               <a class="hover:text-primary" [routerLink]="'/tags/' + (tag | dash | lowercase)">
                 {{ tag }}
               </a>
-            </niz-chip>
+            </mzi-chip>
           </div>
         </div>
       </div>

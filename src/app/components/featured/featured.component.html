@@ -5,20 +5,20 @@
     [routerLink]="[route.route]"
   >
     <div class="flex flex-row items-center space-x-2">
-      <niz-inline-svg
+      <mzi-inline-svg
         *ngIf="type === 'LINK'"
         class="h-4 w-4 text-primary-light"
         svgSource="assets/img/link.svg"
-      ></niz-inline-svg>
+      ></mzi-inline-svg>
       <span class="text-sm">{{ route.updatedAt | date: 'MMMM dd, yyyy' }}</span>
     </div>
 
     <h2 class="space-x-4 mt-1 text-4xl font-bold md:text-5xl">
       <span>{{ route.title }}</span>
-      <niz-inline-svg
+      <mzi-inline-svg
         class="icon"
         svgSource="assets/img/arrow-right.svg"
-      ></niz-inline-svg>
+      ></mzi-inline-svg>
     </h2>
 
     <div class="text-xl text-color-light md:text-2xl">
@@ -26,7 +26,7 @@
     </div>
   </a>
   <div>
-    <niz-chip
+    <mzi-chip
       class="mb-1 mr-1 hover:border-primary "
       *ngFor="let tag of route.tags | slice: 0:3"
       size="xl"
@@ -37,7 +37,7 @@
       >
         {{ tag }}
       </a>
-    </niz-chip>
+    </mzi-chip>
   </div>
   <div
     (click)="link.click()"
@@ -46,10 +46,10 @@
     <div
       class="backdrop font-fold flex text-2xl text-primary justify-center items-center absolute inset-0 bg-canvas opacity-0"
     ></div>
-    <niz-inline-svg
+    <mzi-inline-svg
       class="gradient absolute inset-0 transform rotate-180"
       svgSource="assets/img/gradient.svg"
-    ></niz-inline-svg>
+    ></mzi-inline-svg>
 
     <markdown [src]="'assets/content/' + route.route + '.md'"></markdown>
   </div>

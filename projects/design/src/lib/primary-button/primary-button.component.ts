@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'niz-primary-button',
+  selector: 'mzi-primary-button',
   templateUrl: './primary-button.component.html',
   styleUrls: ['./primary-button.component.scss'],
 })

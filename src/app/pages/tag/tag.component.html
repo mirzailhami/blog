@@ -1,10 +1,10 @@
-<niz-seo
+<mzi-seo
   *ngIf="page$ | async as page"
   [title]="page.title"
   [description]="'Semua post dari ' + page.title"
   [route]="page.route"
   [tags]="[page.title]"
-></niz-seo>
+></mzi-seo>
 
 <article class="max-w-container space-y-5 mt-10">
   <header class="space-y-4">

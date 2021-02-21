@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 
 @Component({
-  selector: 'niz-inline-svg',
+  selector: 'mzi-inline-svg',
   template: '',
   styleUrls: ['inline-svg.component.scss'],
 })

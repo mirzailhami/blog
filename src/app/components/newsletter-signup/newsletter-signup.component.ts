@@ -72,7 +72,7 @@ export class NewsletterSignupComponent implements OnInit {
     this.input.input.nativeElement.focus();
   }
 
-  nizFocus() {
+  focused() {
     this.invalid = false;
     this.sa.event('newsletter_focus');
   }
