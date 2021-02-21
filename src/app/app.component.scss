@@ -3,7 +3,7 @@
 }
 
 .router-link {
-  @apply relative text-lg font-semibold h-6 select-none rounded-md focus:outline-none;
+  @apply relative text-base font-semibold h-6 select-none rounded-md focus:outline-none;
 }
 
 .router-link-active {
