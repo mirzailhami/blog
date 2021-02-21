@@ -11,10 +11,10 @@ const routes: Routes = [
     component: BlogPostComponent,
     canActivate: [IsAvailable]
   },
-  { path: '', redirectTo: '/blog' },
+  { path: '', redirectTo: '/tutorial' },
   {
     path: '**',
-    redirectTo: '/blog'
+    redirectTo: '/tutorial'
   }
 ];
 

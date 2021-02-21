@@ -108,8 +108,8 @@ export class BreadcrumbComponent implements OnInit, OnDestroy {
   private routePatterns(): RoutePattern[] {
     return [
       {
-        pattern: /^\/blog$/,
-        text: 'blog',
+        pattern: /^\/tutorial$/,
+        text: 'tutorial',
       },
       {
         pattern: /^\/authors$/,

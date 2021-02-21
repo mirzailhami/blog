@@ -34,10 +34,10 @@ require('@notiz/scully-plugin-lazy-images');
 exports.config = {
   ...
   routes: {
-    '/blog/:slug': {
+    '/tutorial/:slug': {
       type: 'contentFolder',
       slug: {
-        folder: './content/blog'
+        folder: './content/tutorial'
       },
       postRenderers: ['lazyImages']
     }

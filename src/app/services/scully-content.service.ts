@@ -20,7 +20,7 @@ export class ScullyContentService {
   constructor(private scully: ScullyRoutesService, private router: Router) {}
 
   blogPosts(): Observable<ScullyRoute[]> {
-    return filterRoute(this.scully.available$, '/blog/').pipe(
+    return filterRoute(this.scully.available$, '/tutorial/').pipe(
       map((posts) =>
         posts.sort((p1, p2) =>
           new Date(p1.publishedAt) > new Date(p2.publishedAt) ? -1 : 1

@@ -44,7 +44,7 @@ ionic start myApp tabs
 - **tabs**: salah satu pilihan template starter
 
 Perintah di atas akan menghasilkan berikut:
-![Select JavaScript Framework](https://mirzailhami.com/assets/img/blog/memulai-projek-dengan-ionic-dan-capacitor/optimized/pilih-ionic-template.png)
+![Select JavaScript Framework](/assets/img/tutorial/memulai-projek-dengan-ionic-dan-capacitor/optimized/pilih-ionic-template.png)
 
 Pilih salah satu framework JavaScript yang Anda kuasai, saya prefer [Angular](https://mirzailhami.com/tags/angular). Gunakan kursor atas-bawah di keyboard untuk memilih, lalu enter. Untuk bypass pilihan ini, Anda dapat memulai project dengan propery `--type`.
 ```
@@ -74,7 +74,7 @@ Nah, di atas tersebut adalah cara memulai aplikasi Ionic menggunakan CLI. Ionic 
 
 ## Memulai Aplikasi (via Wizard)
 Untuk memulai aplikasi Ionic melalui wizard UI silakan [klik disini](https://ionicframework.com/start#basics). Dari wizard ini, Anda dapat menentukan nama aplikasi, icon, warna tema, pilih template dan pilih framework.
-![Memulai Ionic via Wizard](https://mirzailhami.com/assets/img/blog/memulai-projek-dengan-ionic-dan-capacitor/optimized/memulai-ionic-via-wizard.png)
+![Memulai Ionic via Wizard](/assets/img/tutorial/memulai-projek-dengan-ionic-dan-capacitor/optimized/memulai-ionic-via-wizard.png)
 
 Langkah berikutnya adalah Anda dapat mengkoneksikan projek Ionic tersebut ke `Github/Gitlab/Bitbucket` dan menggunakan [Dashboard Ionic](https://dashboard.ionicframework.com) untuk build, deploy dan preview.
 

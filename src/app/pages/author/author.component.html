@@ -15,7 +15,7 @@
 <div class="max-w-container space-y-5 mt-10">
   <app-breadcrumb></app-breadcrumb>
   <h1 *ngIf="author$ | async as author" class="text-2xl text-semibold">
-    More about the author
+    Selengkapnya tentang penulis
   </h1>
   <div
     class="max-w-sm bg-canvas-light rounded-lg overflow-hidden px-4 py-5 space-y-6 md:max-w-lg"
@@ -77,8 +77,8 @@
 <div class="mx-auto flex">
   <app-card-stack
     *ngIf="author$ | async as author"
-    title="Latest Articles"
-    [subtitle]="'Latest posts by ' + author.title"
+    title="Tutorial Terbaru"
+    [subtitle]="'Tutorial terbaru oleh ' + author.title"
   >
     <div
       class="card"
@@ -96,7 +96,7 @@
   class="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 mt-10 max-w-screen-xl mx-auto px-5"
 >
   <div class="w-full md:w-9/12 xl:w-10/12 flex flex-col space-y-4">
-    <h2 class="text-2xl font-semibold">Artikel Terakhir</h2>
+    <h2 class="text-2xl font-semibold">Tutorial Terakhir</h2>
     <div class="flex flex-wrap">
       <app-article
         *ngFor="let blogPost of updatedAuthorPosts$ | async | slice: 1:10"

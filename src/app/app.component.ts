@@ -36,12 +36,12 @@ export class AppComponent implements OnInit {
       links: [
         {
           title: 'Tutorial',
-          url: '/blog/',
+          url: '/tutorial/',
           svg: 'assets/img/blog-white.svg',
         },
         {
           title: 'Penulis',
-          url: '/authors/mirza-ilhami',
+          url: '/authors/',
           svg: 'assets/img/author.svg',
         },
         {

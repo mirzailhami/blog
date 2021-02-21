@@ -13,7 +13,7 @@ export class SearchPipe implements PipeTransform {
     return routes
       .filter(
         (route) =>
-          route.route.startsWith('/blog/') ||
+          route.route.startsWith('/tutorial/') ||
           route.route.startsWith('/links/') ||
           route.route.startsWith('/tags/')
       )

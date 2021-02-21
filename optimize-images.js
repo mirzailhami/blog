@@ -10,7 +10,7 @@ const getDirectories = source =>
     .map(dirent => dirent.name);
 
 (async () => {
-  const source = 'src/assets/img/blog';
+  const source = 'src/assets/img/tutorial';
   const directories = getDirectories(source);
   for await (const directory of directories) {
     await imagemin([`${source}/${directory}/*.{jpg,png,svg}`], {

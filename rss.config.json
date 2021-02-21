@@ -13,7 +13,7 @@
     "atom": "https://mirzailhami.com/feed.atom"
   },
   "outDir": "./dist/static",
-  "categories": ["Web Development", "Ionic Framework", "Blog", "Angular", "node", "JavaScript"],
-  "blogPostRouteSlug": "/blog",
+  "categories": ["Web Development", "Ionic Framework", "CapacitorJS", "Tutorial", "Angular", "node", "JavaScript"],
+  "blogPostRouteSlug": "/tutorial",
   "newestPostsFirst": true
 }

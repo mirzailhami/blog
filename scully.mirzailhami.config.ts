@@ -39,10 +39,10 @@ const sitemapConfig: SitemapConfig = {
   ],
   ignoredRoutes: ['/404', '/confirm-subscription', '/unsubscribe'],
   routes: {
-    '/blog/:slug': {
+    '/tutorial/:slug': {
       changeFreq: 'daily',
       priority: '0.9',
-      sitemapFilename: 'sitemap-blog.xml',
+      sitemapFilename: 'sitemap-tutorial.xml',
     },
     // '/links/:slug': {
     //   changeFreq: 'daily',
@@ -64,10 +64,10 @@ export const config: ScullyConfig = {
   defaultPostRenderers,
   outDir: './dist/static',
   routes: {
-    '/blog/:slug': {
+    '/tutorial/:slug': {
       type: 'contentFolder',
       slug: {
-        folder: './content/blog',
+        folder: './content/tutorial',
       },
       postRenderers: [...defaultPostRenderers, 'amp', 'bannerGenerator'],
     },
