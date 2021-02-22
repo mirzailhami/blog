@@ -46,7 +46,7 @@
     <div class="space-x-2" *ngIf="author$ | async as author">
       <mzi-chip size="xl">
         <a
-          class="flex items-center space-x-2"
+          class="flex items-center space-x-2 hover:text-primary"
           href="https://twitter.com/{{ author.twitter }}"
           target="_blank"
           rel="noreferrer"
@@ -60,7 +60,7 @@
       </mzi-chip>
       <mzi-chip size="xl">
         <a
-          class="flex items-center space-x-2"
+          class="flex items-center space-x-2 hover:text-primary"
           href="https://github.com/{{ author.github }}"
           target="_blank"
           rel="noreferrer"
