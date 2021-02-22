@@ -39,13 +39,13 @@
       </div>
     </div>
 
-    <div class="prose">
+    <div class="prose" *ngIf="author$ | async as author">
       <!-- <scully-content></scully-content> -->
       <markdown [src]="'assets/content/authors/' + author.sourceFile"></markdown>
     </div>
 
     <div class="space-x-2" *ngIf="author$ | async as author">
-      <mzi-chip size="xl">
+      <mzi-chip size="xl" class="hover:border-primary">
         <a
           class="flex items-center space-x-2 hover:text-primary"
           href="https://twitter.com/{{ author.twitter }}"
@@ -56,10 +56,10 @@
             class="h-4 w-4"
             svgSource="assets/img/twitter-white.svg"
           ></mzi-inline-svg>
-          <span>@{{ author.twitter }}</span>
+          <span class="hover:text-primary">@{{ author.twitter }}</span>
         </a>
       </mzi-chip>
-      <mzi-chip size="xl">
+      <mzi-chip size="xl" class="hover:border-primary">
         <a
           class="flex items-center space-x-2 hover:text-primary"
           href="https://github.com/{{ author.github }}"
@@ -69,7 +69,7 @@
             class="h-4 w-4"
             svgSource="assets/stack/github.svg"
           ></mzi-inline-svg>
-          <span>@{{ author.github }}</span>
+          <span class="hover:text-primary">@{{ author.github }}</span>
         </a>
       </mzi-chip>
     </div>
