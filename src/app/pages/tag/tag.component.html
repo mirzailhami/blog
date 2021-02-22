@@ -30,7 +30,7 @@
     <h2 class="text-2xl font-semibold">
       Postingan terakhir untuk {{ (page$ | async)?.title }}
     </h2>
-    <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <app-article
         *ngFor="let blogPost of tagPosts$ | async | slice: 0:10"
         [route]="blogPost"

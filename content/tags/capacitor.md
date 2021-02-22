@@ -1,4 +1,0 @@
----
-title: CapacitorJS
-slug: capacitorjs
----

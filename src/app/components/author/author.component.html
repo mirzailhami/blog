@@ -1,15 +1,15 @@
 <div
-  class="max-w-sm bg-canvas-light rounded-lg overflow-hidden px-4 py-5 space-y-6 md:max-w-lg"
+  class="max-w-sm bg-canvas-light rounded-lg overflow-hidden px-4 py-4 space-y-4 md:max-w-lg"
 >
   <div class="flex items-center space-x-4">
     <img
-      class="h-24 w-24 rounded-full"
+      class="h-20 w-20 rounded-full"
       [alt]="author.title"
       [src]="author.img"
     />
     <div>
       <a
-        class="mt-1 text-2xl font-bold line-clamp-2 min leading-8"
+        class="mt-1 text-xl font-bold line-clamp-2 min leading-8"
         [routerLink]="author.route"
       >
         {{ author.title }}
@@ -25,9 +25,9 @@
   </div>
 
   <div class="space-x-2">
-    <mzi-chip size="xl">
+    <mzi-chip size="xl" class="hover:border-primary">
       <a
-        class="flex items-center space-x-2"
+        class="flex items-center space-x-2 hover:text-primary"
         href="https://twitter.com/{{ author.twitter }}"
         target="_blank"
         rel="noreferrer"
@@ -39,9 +39,9 @@
         <span>@{{ author.twitter }}</span>
       </a>
     </mzi-chip>
-    <mzi-chip size="xl">
+    <mzi-chip size="xl" class="hover:border-primary">
       <a
-        class="flex items-center space-x-2"
+        class="flex items-center space-x-2 hover:text-primary"
         href="https://github.com/{{ author.github }}"
         target="_blank"
         rel="noreferrer"
