@@ -43,7 +43,8 @@
       <div
         class="prose prose-toc max-w-none md:prose-lg md:col-span-2 lg:col-span-3"
       >
-        <scully-content></scully-content>
+        <!-- <scully-content></scully-content> -->
+        <markdown [src]="'assets/content/tutorial/' + route.sourceFile"></markdown>
       </div>
       <div class="order-first md:order-none mb-5">
         <div class="sticky top-32 space-y-8">

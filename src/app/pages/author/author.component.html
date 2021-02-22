@@ -40,7 +40,8 @@
     </div>
 
     <div class="prose">
-      <scully-content></scully-content>
+      <!-- <scully-content></scully-content> -->
+      <markdown [src]="'assets/content/authors/' + author.sourceFile"></markdown>
     </div>
 
     <div class="space-x-2" *ngIf="author$ | async as author">
