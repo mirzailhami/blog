@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [CardStackComponent],
   imports: [CommonModule, PipesModule, MarkdownModule.forChild(), RouterModule],
-  exports: [CardStackComponent, MarkdownModule],
+  exports: [CardStackComponent],
   providers: [],
 })
 export class ComponentsModule {}

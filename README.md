@@ -6,7 +6,7 @@
 
 ## Blog
 
-Hi, saya Mirza Ilhami, full stack software developer yang fokus dengan JavaScript khususnya semua terkait <a href="https://mirzailhami.com/tags/ionic">Ionic Framework</a>, <a href="https://mirzailhami.com/tags/capacitor">Capacitor</a>, <a href="https://mirzailhami.com/tags/pwa">PWA</a>, <a href="https://mirzailhami.com/tags/angular">Angular</a> dan banyak lagi 👌.
+Hi, saya Mirza Ilhami, full stack software developer yang fokus dengan JavaScript khususnya semua terkait <a href="https://mirzailhami.com/tags/ionic-framework">Ionic Framework</a>, <a href="https://mirzailhami.com/tags/capacitorjs">Capacitor</a>, <a href="https://mirzailhami.com/tags/pwa">PWA</a>, <a href="https://mirzailhami.com/tags/angular">Angular</a> dan banyak lagi 👌.
 
 Diwaktu senggang saya juga mengajar mahasiswa di kelas, tepatnya ngajar kelas online dari rumah.
 
